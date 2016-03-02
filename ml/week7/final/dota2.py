@@ -38,7 +38,7 @@ kfold = KFold(n=len(features), n_folds=5, shuffle=True)
 
 print '\nGradient boosting:'
 
-for trees_count in []:#[10, 20, 30]:
+for trees_count in [10, 20, 30]:
     t = time()
 
     estimator = GradientBoostingClassifier(n_estimators=trees_count)
